@@ -1,3 +1,5 @@
+//oriya7914@gamil.com
+//213525512
 #include <iostream>
 #include <vector>
 #include "Graph.hpp"
@@ -11,8 +13,8 @@ namespace ariel{
         
       static int isConnected(Graph &graph);
       static std::string negativeCycle(Graph& graph);
-        static std::string shortestPath(Graph& graph, int start, int end);
-        static bool detectCycleDFS(Graph& graph, size_t node, std::vector<bool>& visited, std::vector<bool>& recStack);
+      static std::string shortestPath(Graph& graph, int start, int end);
+      static bool detectCycleDFS(Graph& graph, size_t node, std::vector<bool>& visited, std::vector<bool>& recStack);
        static std::string isBipartite(Graph& graph);
        static void DFS(Graph &graph, size_t node, std::vector<bool> &visited);
        static bool isContainsCycle(Graph& g);

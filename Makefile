@@ -1,6 +1,7 @@
 #!make -f
-
 #CXX=clang++
+#oriya7914@gamil.com
+#213525512
 CXXFLAGS=-std=c++11 -Werror -Wsign-conversion
 VALGRIND_FLAGS=-v --leak-check=full --show-leak-kinds=all  --error-exitcode=99
 

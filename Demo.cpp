@@ -2,6 +2,8 @@
  * Demo program for Exercise 2.
  * Author: Benjamin Saldman.
  */
+//oriya7914@gamil.com
+//213525512
 #include "Algorithms.hpp"
 #include "Graph.hpp"
 
@@ -123,21 +125,6 @@ cout << "My Graph 8" ;
     g.printGraph();     
     cout << Algorithms::isConnected(g) << endl;// no
     cout << Algorithms::shortestPath(g, 3,0) << endl;//-1
-    cout << Algorithms::isBipartite(g) << endl; //// A:2,3 B:0,1
-    cout << Algorithms::isContainsCycle(g) << endl;//
-    cout << Algorithms::negativeCycle(g) << endl;//no
-cout << "My Graph 9" ;
-    vector<vector<int>> graph9 = {
-    {0, 1, 0, 0, 0, 0},
-    {1, 0, 1, 0, 0, 0},
-    {0, 1, 0, 0, 0, 0},
-    {0, 0, 0, 0, 1, 0},
-    {0, 0, 0, 1, 0, 1},
-    {0, 0, 0, 0, 1, 0}};
-    g.loadGraph(graph9);
-    g.printGraph();     
-    cout << Algorithms::isConnected(g) << endl;// yes
-    cout << Algorithms::shortestPath(g, 0,2) << endl;//4,1,3,2
     cout << Algorithms::isBipartite(g) << endl; //// A:2,3 B:0,1
     cout << Algorithms::isContainsCycle(g) << endl;//
     cout << Algorithms::negativeCycle(g) << endl;//no

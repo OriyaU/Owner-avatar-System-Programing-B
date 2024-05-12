@@ -1,40 +1,8 @@
-<!-- <!-- # מטלה 1 - גרפים (Classes and Namespaces)
-
-המטרה שלכם במטלה הזאת היא ליצור מחלקה שמייצגת גרף ולממש אלגוריתמים על הגרפים (זה הזמן להזכר בקורס אלגוריתמים 1).
-
-במטלה הזאת הייצוג של הגרף שלכם יתבצע בעזרת מטריצת שכנויות - https://he.wikipedia.org/wiki/%D7%9E%D7%98%D7%A8%D7%99%D7%A6%D7%AA_%D7%A9%D7%9B%D7%A0%D7%95%D7%AA.
-
-הגרף יכול להיות גרף מכוון ולא מכוון וגם גרף ממושקל. מטריצת השכנויות חייבת להיות מטריצה ריבועית.
-
-עליכם לכתוב את הקבצים הבאים:
-
-```
-Graph.cpp
-Algorithms.cpp
-```
-
-הקובץ `Graph.cpp` מכיל מחלקה המייצגת גרף.
-המחלקה מכילה את הפעולות `loadGraph` המקבלת מטריצת שכנויות וטוענת אותה לתוך הגרף ו-`printGraph` שמדפיסה את הייצוג של הגרף (הפורמט לבחירתכם, ראו דוגמה ב-`Demo.cpp`).
-
-הקובץ `Algorithms.cpp` מכיל מימושים לאלגוריתמים על גרפים. ביניהם:
-
-- `isConnected(g)` - האלגוריתם מקבל גרף ומחזיר 1 אם הגרף קשיר (אחרת מחזיר 0).
-- `shortestPath(g,start,end)` - האלגוריתם מקבל גרף, קודקוד התחלה וקודקוד סיום ומחזיר את המסלול הקל ביותר (במקרה שהגרף לא ממושקל - הקצר ביותר) בין שני הקודקודים. במידה ואין מסלול כזה, האלגוריתם יחזיר -1.
-- `isContainsCycle(g)` - האלגוריתם מקבל גרף ומדפיס מעגל כלשהו. אם לא קיים מעגל בגרף, האלגוריתם יחזיר 0.
-- `isBipartite(g)` - האלגוריתם מקבל גרף ומחזיר את החלוקה של הגרף לגרף דו-צדדי. אם אי אפשר לחלק את הגרף, האלגוריתם יחזיר 0.
-- `negativeCycle(g)` - האלגוריתם מקבל גרף ומוצא מעגל שלילי (כלומר מעגל שסכום המשקלים של הצלעות שלילי). אם לא קיים מעגל כזה, האלגוריתם ידפיס שלא קיים מעגל שלילי.
-
-הקובץ `Demo.cpp` מכיל דוגמאות של קלטים ופלטים.
-עליכם לכתוב בתחילת כל קובץ את מספר תעודת הזהות שלכם ואת המייל. כמו כן, בנוסף לקבצים של המטלה אתם נדרשים להגיש גם קובץ README המתאר את אופן המימוש ואת החלוקה שביצעתם בקוד (סוג של מדריך משתמש). אי עמידה בהנחיות תגרור הפחתה בציון. בהצלחה! -->
 
 
-Description of the  project: --># Owner-avatar-System-Programing-B
-projectes
-
-
-
-
-Description
+//oriya7914@gamil.com
+//213525512
+Description of the  project: 
 
 Welcome to the Graph Algorithms Library, a C++ project that provides a simple  implementation of graph data structures along with fundamental graph algorithms. This library supports both directed and undirected graphs, allowing you to perform various graph-related operations with ease.
 
@@ -64,6 +32,7 @@ getNumOfVertices()
 checkEdge()
 
 The  Algoritems functionalities:
+
     static int isConnected(Graph &graph);
         Purpose: Determines if the graph is connected.
         Implementation: Utilizes Depth-First Search (DFS) to traverse the graph and checks if all vertices are reachable from the starting vertex. If any vertex remains unreachable, the graph is considered disconnected.
@@ -121,6 +90,10 @@ Include the necessary header files in your code:
     #include "Algorithms.hpp"
     #include "Graph.hpp"
  Now you can use the graph algorithms provided by this library in your project.
+
+tests:
+ By using doctest.h file, we creted a test file that checks the function on all kind of graphs like when the graph is directed or undirected,connected or unconected.
+To run the test after cloning the repository use make test command, and then run ./test.
 
 
 
